@@ -141,5 +141,4 @@ Together they form a cohesive platform narrative:
 
 MVP structure established.  
 Next: fill the core anchor docs (runtime guardrails + service contract), then add golden paths and release patterns.
----
 
