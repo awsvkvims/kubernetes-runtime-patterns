@@ -12,7 +12,25 @@ Use this as a map — not a specification.
 - Dive into a specific diagram based on the question you are asking
 - Follow links from each diagram to detailed documents
 
-You do not need to read this file top-to-bottom.
+You do not need to read this file top-to-bottom. 
+If you can explain:
+- what runtime guardrails are,
+- where they live,
+- who owns them,
+- and why approvals are unnecessary,
+
+you have enough context to move on to deeper sections of the repository.
+
+## Visual Conventions Used
+
+Across diagrams in this document:
+
+- **Boxes** represent conceptual areas or responsibilities, not tools
+- **Arrows** represent relationship or information flow — not execution order
+- **Subgraphs** group concerns that evolve independently
+- **Dashed or light styling** indicates intent or category, not enforcement strength
+
+If a diagram shows execution flow, it will explicitly say so.
 
 ## Diagram 1: Repository Overview
 
@@ -57,6 +75,10 @@ flowchart LR
 
 **Purpose:**  
 Explain *what* runtime guardrails are, *what problem they solve*, and *how they are categorized* — without tying to Kubernetes internals yet.
+
+> **Scope note:**  
+> Kubernetes is used as the primary reference runtime because it provides clear, enforceable control planes.  
+> The guardrail concepts apply more broadly, but implementations outside Kubernetes are out of scope for this repository.
 
 This diagram answers:
 - “What counts as a runtime guardrail?”
@@ -355,7 +377,34 @@ flowchart LR
 ---
 ## Diagram Index
 
-- Repository Overview — overall structure
-- Runtime Guardrail Model — types of guardrails
-- Reference Architecture — where guardrails live at runtime
-- Delivery Lifecycle Injection Points — when guardrails apply
+1. Repository Overview — orientation and scope
+2. Runtime Guardrail Conceptual Model — types and intent
+3. Kubernetes Control Plane Mapping — where guardrails live
+4. End-to-End Guardrail Lifecycle — guardrails over time
+5. CI/CD vs Runtime Guardrails — enforcement boundaries
+6. Decision Ownership & Audience Map — who decides what
+
+---
+
+## What This Architecture Deliberately Excludes
+
+To keep this model **clear, scalable, and reusable**, the following are intentionally not included in these diagrams:
+
+- **Specific tools or vendors**  
+  (e.g., no Helm vs Kustomize debates, no policy engines named)
+
+- **Environment-specific details**  
+  (dev / staging / prod differences are implementation concerns)
+
+- **YAML, CRDs, or configuration syntax**  
+  These belong in implementation patterns, not architecture orientation
+
+- **Human approval steps**  
+  Guardrails replace approvals; humans define intent, systems enforce it
+
+- **Team or application-specific workflows**  
+  This is a *platform architecture*, not an app delivery diagram
+
+If something feels “missing,” it is likely covered in:
+- `03-reference-architecture/` (where guardrails live)
+- `04-implementation-patterns/` (how guardrails are built)
