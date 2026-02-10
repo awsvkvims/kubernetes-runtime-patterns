@@ -127,6 +127,8 @@ flowchart TB
 - Enforcement increases with maturity (warn → block → auto-correct)
 - Humans define policy; systems enforce it consistently
 
+**Where to go next**
+- Canonical definitions: [`02-runtime-model/runtime-guardrail-categories.md`](02-runtime-model/runtime-guardrail-categories.md)
 
 ---
 
