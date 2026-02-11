@@ -410,3 +410,14 @@ To keep this model **clear, scalable, and reusable**, the following are intentio
 If something feels “missing,” it is likely covered in:
 - `03-reference-architecture/` (where guardrails live)
 - `04-implementation-patterns/` (how guardrails are built)
+
+## Related Deep-Dive Documents
+
+- Multi-Tenancy & Isolation Architecture  
+  → [03-reference-architecture/multi-tenancy-and-isolation.md](03-reference-architecture/multi-tenancy-and-isolation.md)
+
+- Policy Enforcement Architecture  
+  → [03-reference-architecture/policy-enforcement.md](03-reference-architecture/policy-enforcement.md)
+
+- Observability Architecture  
+  → [03-reference-architecture/observability-architecture.md](03-reference-architecture/observability-architecture.md)

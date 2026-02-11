@@ -18,3 +18,18 @@ Use this model to:
 
 - Visual orientation: [`../ARCHITECTURE-AT-A-GLANCE.md`](../ARCHITECTURE-AT-A-GLANCE.md)
 - Kubernetes mapping (next): `03-reference-architecture/`
+
+## Where This Model Is Enforced
+
+The runtime model describes *what* guardrails are.
+
+See the reference architecture for *where* and *how* they are implemented:
+
+- **System Overview**  
+  → [../03-reference-architecture/system-overview.md](../03-reference-architecture/system-overview.md)
+
+- **Policy Enforcement Architecture**  
+  → [../03-reference-architecture/policy-enforcement.md](../03-reference-architecture/policy-enforcement.md)
+
+- **Multi-Tenancy & Isolation Architecture**  
+  → [../03-reference-architecture/multi-tenancy-and-isolation.md](../03-reference-architecture/multi-tenancy-and-isolation.md)

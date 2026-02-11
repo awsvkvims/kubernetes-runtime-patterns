@@ -50,3 +50,25 @@ not bolted on as reactive tooling.
 - Conceptual model: `02-runtime-model/`
 - Implementation patterns: `04-implementation-patterns/`
 - Visual orientation: [`../ARCHITECTURE-AT-A-GLANCE.md`](../ARCHITECTURE-AT-A-GLANCE.md)
+
+## Architecture Areas
+
+- **System Overview**  
+  High-level runtime guardrail architecture and control-plane flow  
+  → [system-overview.md](system-overview.md)
+
+- **Cluster Architecture**  
+  Logical layout of cluster components and enforcement boundaries  
+  → [cluster-architecture.md](cluster-architecture.md)
+
+- **Policy Enforcement**  
+  Where preventive, detective, and corrective guardrails live  
+  → [policy-enforcement.md](policy-enforcement.md)
+
+- **Multi-Tenancy & Isolation**  
+  Namespace boundaries, RBAC, NetworkPolicy, quotas, and progressive hardening  
+  → [multi-tenancy-and-isolation.md](multi-tenancy-and-isolation.md)
+
+- **Observability Architecture**  
+  Signals, telemetry, and feedback loops for runtime enforcement  
+  → [observability-architecture.md](observability-architecture.md)
